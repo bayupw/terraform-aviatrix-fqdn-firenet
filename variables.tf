@@ -52,6 +52,12 @@ variable "tgw_segmentation_for_egress_enabled" {
   default     = true
 }
 
+variable "single_az_ha" {
+  description = "Enable single AZ HA"
+  type        = bool
+  default     = true
+}
+
 locals {
   cloud_type = lookup(local.cloud_type_map, lower(var.cloud_type), null)
 
