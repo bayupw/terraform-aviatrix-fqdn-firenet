@@ -73,7 +73,8 @@ resource "aviatrix_aws_tgw_vpc_attachment" "egress_tgw_attachment" {
 # Create FQDN gateway for Aviatrix FireNet
 module "fqdn_firenet" {
   source  = "bayupw/fqdn-firenet/aviatrix"
-
+  version = "1.0.0"
+  
   cloud_type      = "aws"
   account         = var.aws_account
   region          = var.aws_region
