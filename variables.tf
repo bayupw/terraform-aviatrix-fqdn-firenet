@@ -35,7 +35,6 @@ variable "fqdn_subnet" {
   type        = string
 }
 
-
 variable "firenet_vpc_id" {
   description = "Firenet VPC ID"
   type        = string

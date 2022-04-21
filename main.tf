@@ -1,6 +1,6 @@
 # Create Egress FQDN gateway
 resource "aviatrix_gateway" "this" {
-  cloud_type     = 1
+  cloud_type     = local.cloud_type
   account_name   = var.account
   gw_name        = var.fqdn_gw_name
   vpc_id         = var.firenet_vpc_id
